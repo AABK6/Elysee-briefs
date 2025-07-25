@@ -17,7 +17,8 @@ type PageProps = {
   };
 };
 
-export default async function Home({ params: { lang }, searchParams }: PageProps) {
+export default async function Home({ params, searchParams }: PageProps) {
+  const { lang } = params;
   const dictionary = await getDictionary(lang);
   const allMemos = await getMemos(lang);
 
