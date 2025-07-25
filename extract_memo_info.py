@@ -141,7 +141,7 @@ def extract_text(file_path: str) -> str:
 
 
 def call_gemini(client: genai.Client, content: str) -> Dict[str, Any]:
-    """Send a memo's text to Gemini 2.5 Flash‑Lite and parse the JSON response.
+    """Send a memo's text to Gemini 2.5 Flash and parse the JSON response.
 
     The prompt is written in French to emphasise that the input memo is in
     French.  It instructs the model to return a JSON object with clearly
@@ -151,7 +151,7 @@ def call_gemini(client: genai.Client, content: str) -> Dict[str, Any]:
     Parameters
     ----------
     client : genai.Client
-        An authenticated Gen AI client.
+        An authenticated Gen AI client.
     content : str
         The full text of the memo to analyse.
 
@@ -165,15 +165,23 @@ def call_gemini(client: genai.Client, content: str) -> Dict[str, Any]:
     # metadata and provide translations.  The prompt explicitly asks for
     # JSON output to simplify parsing.
     prompt = (
-        "Vous êtes un assistant qui analyse un mémoire en français et "
-        "extrait des informations. Répondez au format JSON avec les "
-        "champs suivants: "
-        "\"titre_fr\" (titre complet du mémoire en français), "
-        "\"titre_en\" (traduction anglaise du titre), "
-        "\"auteur\" (nom de l'auteur du mémoire), "
-        "\"resume_fr\" (une phrase résumant le contenu du mémoire en français), "
-        "\"resume_en\" (une phrase résumant le contenu du mémoire en anglais). "
-        "Voici le contenu du mémoire:\n\n"
+        """
+        You are an expert assistant specialized in analyzing official documents.
+        Based on the following text from a memo, extract the requested information and provide it in a clean JSON format.
+
+        The JSON object must contain the following keys exactly: title_fr, title_en, author, summary_fr, summary_en.
+
+        - title_fr: The full, original title of the memo in French.
+        - title_en: The accurate English translation of the full French title.
+        - author: The name of the author(s). If not found, use 'Non trouvé'.
+        - summary_fr: A single, concise sentence in French summarizing the main point of the memo.
+        - summary_en: An accurate English translation of the French summary.
+
+        If any piece of information cannot be found in the text, use 'Information non disponible' for that specific field.
+        Do not add any text or markdown formatting before or after the JSON object.
+        
+        Voici le contenu de la note:\n\n
+        """
     ) + content
 
     # Send the prompt to the Gemini API using the Flash‑Lite model.  The
@@ -182,7 +190,7 @@ def call_gemini(client: genai.Client, content: str) -> Dict[str, Any]:
     # ``gemini-2.5-flash-lite`` for cost‑efficient, high‑throughput
     # processing【896886523630561†L516-L599】.
     response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
+        model="gemini-2.5-flash",
         contents=prompt,
     )
 
