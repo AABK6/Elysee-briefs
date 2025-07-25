@@ -69,13 +69,13 @@ export function MemoCard({ memo, index, dictionary, lang }: MemoCardProps) {
           <p className="text-foreground/80 text-base leading-relaxed">{memo.summary}</p>
         </CardContent>
         <CardFooter className="gap-2">
-          <Button asChild variant="secondary">
+          <Button asChild>
             <Link href={`/${lang}/memo/${memo.id}`}>
               <Eye className="mr-2 h-4 w-4" />
               {dictionary.viewDetails}
             </Link>
           </Button>
-          <Button asChild>
+          <Button asChild variant="secondary">
             <a href={memo.documentUrl} target="_blank" rel="noopener noreferrer">
               <FileText className="mr-2 h-4 w-4" />
               {dictionary.viewSource}

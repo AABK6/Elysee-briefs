@@ -98,7 +98,7 @@ export default async function MemoPage({ params }: MemoPageProps) {
                     <div className="prose prose-lg max-w-none text-foreground/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: memo.fullContent }}/>
                 </CardContent>
                 <CardFooter>
-                <Button asChild>
+                <Button asChild variant="secondary">
                     <a href={memo.documentUrl} target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 h-4 w-4" />
                     {dictionary.memoPage.viewSource}
