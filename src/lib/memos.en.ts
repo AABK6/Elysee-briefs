@@ -8,7 +8,7 @@ export const memos: Memo[] = [
     date: '2013-06-05',
     
     title: 'Evolution of public opinion on Europe',
-    /docs/2014/2013.06.05 Note opinion Europe.doc
+    url: '/docs/2014/2013.06.05 Note opinion Europe.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -22,7 +22,7 @@ export const memos: Memo[] = [
     date: '2013-10-07',
     
     title: 'TNS-Sofres qualitative study on the perception of Europe',
-    /docs/2014/2013.10.07 - Note quali Europe.doc
+    url: '/docs/2014/2013.10.07 - Note quali Europe.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -36,7 +36,7 @@ export const memos: Memo[] = [
     date: '2013-12-09',
     
     title: 'Independent Contribution on the State of Public Opinion',
-    /docs/2014/2013.12.09 Note Les_Francais_attendent_etre_convaincus_que_la_France_a_un_avenir.doc
+    url: '/docs/2014/2013.12.09 Note Les_Francais_attendent_etre_convaincus_que_la_France_a_un_avenir.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -50,7 +50,7 @@ export const memos: Memo[] = [
     date: '2014-01-08',
     
     title: 'Press conference: the President\'s image',
-    /docs/2014/2014.01.08 Note conf presse 14 janv - image PR.doc
+    url: '/docs/2014/2014.01.08 Note conf presse 14 janv - image PR.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -64,7 +64,7 @@ export const memos: Memo[] = [
     date: '2014-01-08',
     
     title: 'Press conference: expected / audible sectoral messages',
-    /docs/2014/2014.01.08 Note conf presse 14 janv - messages.doc
+    url: '/docs/2014/2014.01.08 Note conf presse 14 janv - messages.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -78,7 +78,7 @@ export const memos: Memo[] = [
     date: '2014-01-20',
     
     title: 'First feedback on public opinion post-Responsibility Pact (January 20)',
-    /docs/2014/2014.01.20 Opinion post pacte responsabilité.doc
+    url: '/docs/2014/2014.01.20 Opinion post pacte responsabilité.doc',
     categories: ['Economic Policy'],
     
     isQuinquennatEvent: true,
@@ -92,7 +92,7 @@ export const memos: Memo[] = [
     date: '2014-02-03',
     
     title: 'Current Update: Polls and Studies',
-    /docs/2014/2014.02.03 Contrib opinion 3 février.doc
+    url: '/docs/2014/2014.02.03 Contrib opinion 3 février.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -106,7 +106,7 @@ export const memos: Memo[] = [
     date: '2014-02-16',
     
     title: 'Elements for the European Campaign',
-    /docs/2014/2014.02.16 Eléments pour la campagne européenne.doc
+    url: '/docs/2014/2014.02.16 Eléments pour la campagne européenne.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -120,7 +120,7 @@ export const memos: Memo[] = [
     date: '2014-02-22',
     
     title: '« Anti-tipping point » levers among MLP\'s target voters (middle and popular classes)',
-    /docs/2014/2014.02.22 Leviers anti FN.doc
+    url: '/docs/2014/2014.02.22 Leviers anti FN.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -134,7 +134,7 @@ export const memos: Memo[] = [
     date: '2014-02-27',
     
     title: 'Elements of the European Campaign',
-    /docs/2014/2014.02.27 Note Eléments campagne européenne.doc
+    url: '/docs/2014/2014.02.27 Note Eléments campagne européenne.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -148,7 +148,7 @@ export const memos: Memo[] = [
     date: '2014-03-02',
     
     title: 'End of February Opinion Synthesis',
-    /docs/2014/2014.03.02 Synthèse qualis février.doc
+    url: '/docs/2014/2014.03.02 Synthèse qualis février.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -162,7 +162,7 @@ export const memos: Memo[] = [
     date: '2014-03-03',
     
     title: 'Elements of the European Campaign',
-    /docs/2014/2014.03.03 Eléments campagne europeéenne.doc
+    url: '/docs/2014/2014.03.03 Eléments campagne europeéenne.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -176,7 +176,7 @@ export const memos: Memo[] = [
     date: '2014-03-03',
     
     title: 'First conclusions of qualitative interviews with left-wing sympathizers',
-    /docs/2014/2014.03.03 Synthèse qualis debut mars.doc
+    url: '/docs/2014/2014.03.03 Synthèse qualis debut mars.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -190,7 +190,7 @@ export const memos: Memo[] = [
     date: '2014-03-17',
     
     title: 'Perception of public spending cuts by left and center voters (Main conclusions of two qualitative studies conducted in February by IPSOS and A. Mergier)',
-    /docs/2014/2014.03.17 Synthèse_qualis_dépenses.doc
+    url: '/docs/2014/2014.03.17 Synthèse_qualis_dépenses.doc',
     categories: ['Economic Policy'],
     
     isQuinquennatEvent: false,
@@ -203,8 +203,8 @@ export const memos: Memo[] = [
     
     date: '2014-04-13',
     
-    title: 'Summary of the week\'s polls',
-    /docs/2014/2014.04.13 - Synthèse sondages - 13 avril.docx
+    title: 'Summary of the week's polls',
+    url: '/docs/2014/2014.04.13 - Synthèse sondages - 13 avril.docx',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -218,7 +218,7 @@ export const memos: Memo[] = [
     date: '2014-04-19',
     
     title: 'Analysis of the Ifop/SIG weekend poll',
-    /docs/2014/2014.04.19 - Note sondage du we 19 avril.docx
+    url: '/docs/2014/2014.04.19 - Note sondage du we 19 avril.docx',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -232,7 +232,7 @@ export const memos: Memo[] = [
     date: '2014-04-27',
     
     title: 'Analysis of the Ifop/SIG weekend survey',
-    /docs/2014/2014.04.27 - Note sondages du week end 27 avril.doc
+    url: '/docs/2014/2014.04.27 - Note sondages du week end 27 avril.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -246,7 +246,7 @@ export const memos: Memo[] = [
     date: '2014-05-02',
     
     title: 'State of mobilization for the European elections',
-    /docs/2014/2014.05.02 - Etat mobilisation européennes.doc
+    url: '/docs/2014/2014.05.02 - Etat mobilisation européennes.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -260,7 +260,7 @@ export const memos: Memo[] = [
     date: '2014-05-04',
     
     title: 'Analysis of the Ifop/SIG survey from the weekend - May 4',
-    /docs/2014/2014.05.04 - Note sondages du week end 4 mai.doc
+    url: '/docs/2014/2014.05.04 - Note sondages du week end 4 mai.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -274,7 +274,7 @@ export const memos: Memo[] = [
     date: '2014-05-11',
     
     title: 'Analysis of the Ifop/SIG survey from the weekend - May 11',
-    /docs/2014/2014.05.11 - Note sondages du week end 11 mai.doc
+    url: '/docs/2014/2014.05.11 - Note sondages du week end 11 mai.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -288,7 +288,7 @@ export const memos: Memo[] = [
     date: '2014-05-14',
     
     title: 'Results of a qualitative study on Europe',
-    /docs/2014/2014.05.14 Note - présentation quali Europe.doc
+    url: '/docs/2014/2014.05.14 Note - présentation quali Europe.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -302,7 +302,7 @@ export const memos: Memo[] = [
     date: '2014-05-18',
     
     title: 'Main lessons from the Ifop/SIG weekend survey - May 18',
-    /docs/2014/2014.05.18 Note sondages du week end 18 mai.doc
+    url: '/docs/2014/2014.05.18 Note sondages du week end 18 mai.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -316,7 +316,7 @@ export const memos: Memo[] = [
     date: '2014-05-25',
     
     title: 'Elements of analysis',
-    /docs/2014/2014.05.25 Post européennes.doc
+    url: '/docs/2014/2014.05.25 Post européennes.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: true,
@@ -330,7 +330,7 @@ export const memos: Memo[] = [
     date: '2014-06-02',
     
     title: 'Towards a stabilization of the roles assigned by public opinion to the President and the Prime Minister?',
-    /docs/2014/2014.06.02 Image PR.doc
+    url: '/docs/2014/2014.06.02 Image PR.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -344,7 +344,7 @@ export const memos: Memo[] = [
     date: '2014-06-04',
     
     title: 'Pew Research Center study on European public opinion',
-    /docs/2014/2014.06.04 Note sondage Pew Europe.doc
+    url: '/docs/2014/2014.06.04 Note sondage Pew Europe.doc',
     categories: ['Foreign Affairs'],
     
     isQuinquennatEvent: false,
@@ -358,7 +358,7 @@ export const memos: Memo[] = [
     date: '2014-06-12',
     
     title: 'General elements of public opinion on territorial reform',
-    /docs/2014/2014.06.12 Note - réforme territoriale.doc
+    url: '/docs/2014/2014.06.12 Note - réforme territoriale.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: true,
@@ -372,7 +372,7 @@ export const memos: Memo[] = [
     date: '2014-06-13',
     
     title: 'Synthesis of Main Published Polls – June 13',
-    /docs/2014/2014.06.13 Synthèse sondage - 13 juin.doc
+    url: '/docs/2014/2014.06.13 Synthèse sondage - 13 juin.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -386,7 +386,7 @@ export const memos: Memo[] = [
     date: '2014-06-24',
     
     title: 'Elements on public opinion and reform',
-    /docs/2014/2014.06.24 Note - opinion réforme.doc
+    url: '/docs/2014/2014.06.24 Note - opinion réforme.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -400,7 +400,7 @@ export const memos: Memo[] = [
     date: '2014-06-24',
     
     title: 'Insights into public opinion and reform',
-    /docs/2014/2014.06.24 Note AA - opinion réforme.doc
+    url: '/docs/2014/2014.06.24 Note AA - opinion réforme.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -414,7 +414,7 @@ export const memos: Memo[] = [
     date: '2014-06-27',
     
     title: 'Summary of main polls published - June 27',
-    /docs/2014/2014.06.27 Synthèse sondage - 27 juin.doc
+    url: '/docs/2014/2014.06.27 Synthèse sondage - 27 juin.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -428,7 +428,7 @@ export const memos: Memo[] = [
     date: '2014-06-30',
     
     title: 'CSA Study: Right-wing words and left-wing words',
-    /docs/2014/2014.06.30 Note - Evocations valeurs CSA.doc
+    url: '/docs/2014/2014.06.30 Note - Evocations valeurs CSA.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -442,7 +442,7 @@ export const memos: Memo[] = [
     date: '2014-07-01',
     
     title: 'Ifop / Paris Match and TNS-Sofrès / Figaro Magazine Barometers',
-    /docs/2014/2014.07.01 Note - baro Ifop PM juillet.doc
+    url: '/docs/2014/2014.07.01 Note - baro Ifop PM juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -456,7 +456,7 @@ export const memos: Memo[] = [
     date: '2014-07-03',
     
     title: 'CEVIPOF barometer of political dynamics',
-    /docs/2014/2014.07.03 baro cevipof juillet.doc
+    url: '/docs/2014/2014.07.03 baro cevipof juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -470,7 +470,7 @@ export const memos: Memo[] = [
     date: '2014-07-04',
     
     title: 'Public opinion update / territorial reform',
-    /docs/2014/2014.07.04 Note - actualité opinion réforme territoriale.doc
+    url: '/docs/2014/2014.07.04 Note - actualité opinion réforme territoriale.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -484,7 +484,7 @@ export const memos: Memo[] = [
     date: '2014-07-04',
     
     title: 'Summary of the main polls published - July 4',
-    /docs/2014/2014.07.04 Synthèse sondage - 4 juillet.doc
+    url: '/docs/2014/2014.07.04 Synthèse sondage - 4 juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -498,7 +498,7 @@ export const memos: Memo[] = [
     date: '2014-07-06',
     
     title: 'MEMO to the President of the Republic: elements of opinion / social conference',
-    /docs/2014/2014.07.06 Note - opinion conf sociale.doc
+    url: '/docs/2014/2014.07.06 Note - opinion conf sociale.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -512,7 +512,7 @@ export const memos: Memo[] = [
     date: '2014-07-09',
     
     title: 'Contextual elements: public opinion / July 14th intervention',
-    /docs/2014/2014.07.09 Note - opinion 14 juillet.doc
+    url: '/docs/2014/2014.07.09 Note - opinion 14 juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -526,7 +526,7 @@ export const memos: Memo[] = [
     date: '2014-07-15',
     
     title: 'Ipsos / Le Point Popularity Barometers',
-    /docs/2014/2014.07.15 Note - baros juillet.doc
+    url: '/docs/2014/2014.07.15 Note - baros juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -540,7 +540,7 @@ export const memos: Memo[] = [
     date: '2014-07-21',
     
     title: 'Current affairs questions SIG',
-    /docs/2014/2014.07.21 Note - questions d\'actu 21 juillet.doc
+    url: '/docs/2014/2014.07.21 Note - questions d\'actu 21 juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -554,7 +554,7 @@ export const memos: Memo[] = [
     date: '2014-07-25',
     
     title: 'Main surveys published - July 25',
-    /docs/2014/2014.07.25 Synthèse sondage - 25 juillet.doc
+    url: '/docs/2014/2014.07.25 Synthèse sondage - 25 juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -568,7 +568,7 @@ export const memos: Memo[] = [
     date: '2014-07-28',
     
     title: 'Current SIG (Service d\'Information du Gouvernement) issues',
-    /docs/2014/2014.07.28 Note - questions d\'actu 28 juillet.doc
+    url: '/docs/2014/2014.07.28 Note - questions d\'actu 28 juillet.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -582,7 +582,7 @@ export const memos: Memo[] = [
     date: '2014-07-28',
     
     title: 'Overview - Pollsters',
-    /docs/2014/2014.07.28 Note - tour horizon sondeurs.doc
+    url: '/docs/2014/2014.07.28 Note - tour horizon sondeurs.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -596,7 +596,7 @@ export const memos: Memo[] = [
     date: '2014-07-29',
     
     title: 'Harris Interactive barometer / verbatim analysis',
-    /docs/2014/2014.07.29 Note - Baro HI Verbatims.doc
+    url: '/docs/2014/2014.07.29 Note - Baro HI Verbatims.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -610,7 +610,7 @@ export const memos: Memo[] = [
     date: '2014-08-03',
     
     title: 'Memo: Public opinion outlook for the autumn season',
-    /docs/2014/2014.08.03 Note - opinion rentrée.doc
+    url: '/docs/2014/2014.08.03 Note - opinion rentrée.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -624,7 +624,7 @@ export const memos: Memo[] = [
     date: '2014-08-03',
     
     title: 'Note: Current Affairs Questions SIG',
-    /docs/2014/2014.08.03 Note - questions d\'actu 3 août.doc
+    url: '/docs/2014/2014.08.03 Note - questions d'actu 3 août.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -638,7 +638,7 @@ export const memos: Memo[] = [
     date: '2014-08-20',
     
     title: 'Readers\' Reactions - Le Monde Interview',
-    /docs/2014/2014.08.20 Réactions itv Monde.doc
+    url: '/docs/2014/2014.08.20 Réactions itv Monde.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -652,7 +652,7 @@ export const memos: Memo[] = [
     date: '2014-08-26',
     
     title: 'Current Affairs Questions SIG',
-    /docs/2014/2014.08.26 Note - questions d\'actu 27 août.doc
+    url: '/docs/2014/2014.08.26 Note - questions d\'actu 27 août.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -666,7 +666,7 @@ export const memos: Memo[] = [
     date: '2014-08-27',
     
     title: 'First post-reshuffle polls',
-    /docs/2014/2014.08.27 Note - sondages remaniement.doc
+    url: '/docs/2014/2014.08.27 Note - sondages remaniement.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: true,
@@ -680,7 +680,7 @@ export const memos: Memo[] = [
     date: '2014-08-28',
     
     title: 'First Post-Reshuffle Polls',
-    /docs/2014/2014.08.28 Note - sondages remaniement.doc
+    url: '/docs/2014/2014.08.28 Note - sondages remaniement.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: true,
@@ -694,7 +694,7 @@ export const memos: Memo[] = [
     date: '2014-09-01',
     
     title: 'SIG/TNS Back-to-School Triads',
-    /docs/2014/2014.09.01 Note - quali TNS août 2014.doc
+    url: '/docs/2014/2014.09.01 Note - quali TNS août 2014.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -708,7 +708,7 @@ export const memos: Memo[] = [
     date: '2014-09-01',
     
     title: 'Current Polls – August 31, 2014',
-    /docs/2014/2014.09.01 Note - sondages hebdo 31 08.doc
+    url: '/docs/2014/2014.09.01 Note - sondages hebdo 31 08.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -722,7 +722,7 @@ export const memos: Memo[] = [
     date: '2014-09-02',
     
     title: 'Popularity ratings and reshuffle: no link?',
-    /docs/2014/2014.09.02 Note - baros septembre.doc
+    url: '/docs/2014/2014.09.02 Note - baros septembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -736,7 +736,7 @@ export const memos: Memo[] = [
     date: '2014-09-05',
     
     title: 'Press conference: an opportunity to close one chapter and open a new one?',
-    /docs/2014/2014.09.05 Note - opinion conf presse.doc
+    url: '/docs/2014/2014.09.05 Note - opinion conf presse.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -750,7 +750,7 @@ export const memos: Memo[] = [
     date: '2014-09-07',
     
     title: 'Current Affairs Questions SIG - September 7, 2014',
-    /docs/2014/2014.09.07 Note - questions d\'actualité 7 sept.doc
+    url: '/docs/2014/2014.09.07 Note - questions d'actualité 7 sept.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -764,7 +764,7 @@ export const memos: Memo[] = [
     date: '2014-09-08',
     
     title: 'Current Affairs Questions SIG - September 7, 2014 - Questions on Reform',
-    /docs/2014/2014.09.08 Note - questions d\'actualité 7 sept - réforme.doc
+    url: '/docs/2014/2014.09.08 Note - questions d\'actualité 7 sept - réforme.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -778,7 +778,7 @@ export const memos: Memo[] = [
     date: '2014-09-15',
     
     title: 'SIG Current Affairs - September 15, 2014',
-    /docs/2014/2014.09.15 Note - questions d\'actualité 15 sept.doc
+    url: '/docs/2014/2014.09.15 Note - questions d'actualité 15 sept.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -792,7 +792,7 @@ export const memos: Memo[] = [
     date: '2014-09-17',
     
     title: 'Government Action Barometer - September 2014',
-    /docs/2014/2014.09.17 Note - baro gvtal sept 14.doc
+    url: '/docs/2014/2014.09.17 Note - baro gvtal sept 14.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -806,7 +806,7 @@ export const memos: Memo[] = [
     date: '2014-09-22',
     
     title: 'Current Affairs Questions SIG - September 22, 2014',
-    /docs/2014/2014.09.22 Note - questions d\'actualité 22 sept.doc
+    url: '/docs/2014/2014.09.22 Note - questions d\'actualité 22 sept.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -820,7 +820,7 @@ export const memos: Memo[] = [
     date: '2014-09-24',
     
     title: 'What is public opinion ready for regarding family allowances?',
-    /docs/2014/2014.09.24 Note - Point allocs familiales.doc
+    url: '/docs/2014/2014.09.24 Note - Point allocs familiales.doc',
     categories: ['Social Policy', 'Economic Policy'],
     
     isQuinquennatEvent: false,
@@ -834,7 +834,7 @@ export const memos: Memo[] = [
     date: '2014-09-29',
     
     title: 'Current Affairs Questions SIG - September 29, 2014',
-    /docs/2014/2014.09.29 Note - questions d\'actualité 29 sept.doc
+    url: '/docs/2014/2014.09.29 Note - questions d'actualité 29 sept.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -848,7 +848,7 @@ export const memos: Memo[] = [
     date: '2014-09-30',
     
     title: 'Memorization of the week\'s political news',
-    /docs/2014/2014.09.30 Note - mémorisation actu 30 sept.doc
+    url: '/docs/2014/2014.09.30 Note - mémorisation actu 30 sept.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -862,7 +862,7 @@ export const memos: Memo[] = [
     date: '2014-09-30',
     
     title: 'State of public opinion as autumn begins',
-    /docs/2014/2014.09.30 Note - état d\'esprit octobre.doc
+    url: '/docs/2014/2014.09.30 Note - état d\'esprit octobre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -876,7 +876,7 @@ export const memos: Memo[] = [
     date: '2014-10-02',
     
     title: 'Barometer of French morale - CSA',
-    /docs/2014/2014.10.02 Note - baro moral CSA.doc
+    url: '/docs/2014/2014.10.02 Note - baro moral CSA.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -890,7 +890,7 @@ export const memos: Memo[] = [
     date: '2014-10-06',
     
     title: 'Current Affairs Questions SIG - October 5, 2014',
-    /docs/2014/2014.10.06 Note - questions d\'actualité 5 octobre.doc
+    url: '/docs/2014/2014.10.06 Note - questions d'actualité 5 octobre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -904,7 +904,7 @@ export const memos: Memo[] = [
     date: '2014-10-07',
     
     title: 'Summary of public opinion results on family allowances, in the context of ongoing budgetary discussions',
-    /docs/2014/2014.10.07 Note - Point allocs familiales 2.doc
+    url: '/docs/2014/2014.10.07 Note - Point allocs familiales 2.doc',
     categories: ['Social Policy', 'Economic Policy'],
     
     isQuinquennatEvent: false,
@@ -918,7 +918,7 @@ export const memos: Memo[] = [
     date: '2014-10-09',
     
     title: 'Debate on unemployment insurance - initial elements of opinion',
-    /docs/2014/2014.10.09 Note - réforme assurance chômage.doc
+    url: '/docs/2014/2014.10.09 Note - réforme assurance chômage.doc',
     categories: ['Economic Policy', 'Social Policy'],
     
     isQuinquennatEvent: true,
@@ -932,7 +932,7 @@ export const memos: Memo[] = [
     date: '2014-10-12',
     
     title: 'Short-term public opinion outlook',
-    /docs/2014/2014.10.12 Note - perspectives opinion CT.doc
+    url: '/docs/2014/2014.10.12 Note - perspectives opinion CT.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -946,7 +946,7 @@ export const memos: Memo[] = [
     date: '2014-10-12',
     
     title: 'Current Affairs SIG - Unemployment Insurance',
-    /docs/2014/2014.10.12 Note - questions d\'actualité 12 oct - chômage.doc
+    url: '/docs/2014/2014.10.12 Note - questions d\'actualité 12 oct - chômage.doc',
     categories: ['Economic Policy', 'Social Policy'],
     
     isQuinquennatEvent: false,
@@ -960,7 +960,7 @@ export const memos: Memo[] = [
     date: '2014-10-12',
     
     title: 'Unemployment Insurance: Opinion Summary',
-    /docs/2014/2014.10.12 Note - synthèse chômage 13 oct.doc
+    url: '/docs/2014/2014.10.12 Note - synthèse chômage 13 oct.doc',
     categories: ['Economic Policy', 'Social Policy'],
     
     isQuinquennatEvent: false,
@@ -974,7 +974,7 @@ export const memos: Memo[] = [
     date: '2014-10-13',
     
     title: 'Current Affairs SIG Questions – Family Allowances',
-    /docs/2014/2014.10.13 Note - questions d\'actualité 12 oct - famille.doc
+    url: '/docs/2014/2014.10.13 Note - questions d\'actualité 12 oct - famille.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -987,8 +987,8 @@ export const memos: Memo[] = [
     
     date: '2014-10-14',
     
-    title: 'recollection of last week\'s political news',
-    /docs/2014/2014.10.14 Note - mémorisation actu 14 oct.doc
+    title: 'recollection of last week's political news',
+    url: '/docs/2014/2014.10.14 Note - mémorisation actu 14 oct.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1002,7 +1002,7 @@ export const memos: Memo[] = [
     date: '2014-10-16',
     
     title: 'Barometer of governmental action - October 2014',
-    /docs/2014/2014.10.16 Note - baro gvtal oct 14.doc
+    url: '/docs/2014/2014.10.16 Note - baro gvtal oct 14.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1016,7 +1016,7 @@ export const memos: Memo[] = [
     date: '2014-10-20',
     
     title: 'Current Affairs SIG Questions - October 20',
-    /docs/2014/2014.10.20 Note - questions d\'actualité 20 oct.doc
+    url: '/docs/2014/2014.10.20 Note - questions d'actualité 20 oct.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1030,7 +1030,7 @@ export const memos: Memo[] = [
     date: '2014-10-24',
     
     title: 'MEMO to Mr. President of the Republic',
-    /docs/2014/2014.10.24 Note - elements généraux opinion 6 novembre.doc
+    url: '/docs/2014/2014.10.24 Note - elements généraux opinion 6 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1044,7 +1044,7 @@ export const memos: Memo[] = [
     date: '2014-10-26',
     
     title: 'Current Affairs Questions SIG - October 26',
-    /docs/2014/2014.10.26 Note - questions d\'actualité 26 oct.doc
+    url: '/docs/2014/2014.10.26 Note - questions d\'actualité 26 oct.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1058,7 +1058,7 @@ export const memos: Memo[] = [
     date: '2014-10-27',
     
     title: 'Some possible levers for unity and rallying public opinion',
-    /docs/2014/2014.10.27 Note - qu\'est ce qui rassemble aujourd\'hui.doc
+    url: '/docs/2014/2014.10.27 Note - qu\'est ce qui rassemble aujourd\'hui.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1071,8 +1071,8 @@ export const memos: Memo[] = [
     
     date: '2014-10-28',
     
-    title: 'Memorization of last week\'s political news',
-    /docs/2014/2014.10.28 Note - mémorisation actu 28 oct.doc
+    title: 'Memorization of last week's political news',
+    url: '/docs/2014/2014.10.28 Note - mémorisation actu 28 oct.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1086,7 +1086,7 @@ export const memos: Memo[] = [
     date: '2014-10-30',
     
     title: 'State of public opinion on taxation',
-    /docs/2014/2014.10.30 Note - point opinion fiscalité.doc
+    url: '/docs/2014/2014.10.30 Note - point opinion fiscalité.doc',
     categories: ['Economic Policy'],
     
     isQuinquennatEvent: false,
@@ -1100,7 +1100,7 @@ export const memos: Memo[] = [
     date: '2014-10-31',
     
     title: 'Elements of opinion on the left',
-    /docs/2014/2014.10.31 Note - éléments d\'opinion sur la gauche.doc
+    url: '/docs/2014/2014.10.31 Note - éléments d'opinion sur la gauche.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1114,7 +1114,7 @@ export const memos: Memo[] = [
     date: '2014-11-03',
     
     title: 'Current Affairs Questions SIG - November 3',
-    /docs/2014/2014.11.03 Note - questions d\'actualité 3 novembre.doc
+    url: '/docs/2014/2014.11.03 Note - questions d\'actualité 3 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1128,7 +1128,7 @@ export const memos: Memo[] = [
     date: '2014-11-09',
     
     title: 'Current Affairs Questions SIG - TF1 Broadcast Post-Test',
-    /docs/2014/2014.11.09 Note - questions d\'actualité 9 novembre.doc
+    url: '/docs/2014/2014.11.09 Note - questions d'actualité 9 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1142,7 +1142,7 @@ export const memos: Memo[] = [
     date: '2014-11-11',
     
     title: 'Opinion elements for the post-November 6th sequence',
-    /docs/2014/2014.11.11 Note - séquence post-6 novembre.doc
+    url: '/docs/2014/2014.11.11 Note - séquence post-6 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1156,7 +1156,7 @@ export const memos: Memo[] = [
     date: '2014-11-12',
     
     title: 'Elements of public opinion on the economic policy being pursued',
-    /docs/2014/2014.11.12 Opinion pol eco.doc
+    url: '/docs/2014/2014.11.12 Opinion pol eco.doc',
     categories: ['Economic Policy'],
     
     isQuinquennatEvent: false,
@@ -1170,7 +1170,7 @@ export const memos: Memo[] = [
     date: '2014-11-16',
     
     title: 'Current Affairs Questions SIG - November 16, 2014',
-    /docs/2014/2014.11.16 Note - questions d\'actualité 16 novembre.doc
+    url: '/docs/2014/2014.11.16 Note - questions d'actualité 16 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1184,7 +1184,7 @@ export const memos: Memo[] = [
     date: '2014-11-18',
     
     title: 'Review of last week\'s political news',
-    /docs/2014/2014.11.18 Note - mémorisation actu 18 novembre.doc
+    url: '/docs/2014/2014.11.18 Note - mémorisation actu 18 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1198,7 +1198,7 @@ export const memos: Memo[] = [
     date: '2014-11-24',
     
     title: 'Current Affairs Questions SIG - November 24, 2014',
-    /docs/2014/2014.11.24 Note - questions d\'actualité 24 novembre.doc
+    url: '/docs/2014/2014.11.24 Note - questions d\'actualité 24 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1211,8 +1211,8 @@ export const memos: Memo[] = [
     
     date: '2014-11-25',
     
-    title: 'Memorandum on last week\'s political events',
-    /docs/2014/2014.11.25 Note - mémorisation actu 26 novembre.doc
+    title: 'Memorandum on last week's political events',
+    url: '/docs/2014/2014.11.25 Note - mémorisation actu 26 novembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1226,7 +1226,7 @@ export const memos: Memo[] = [
     date: '2014-12-01',
     
     title: 'Current Affairs Questions SIG – December 1st, 2014',
-    /docs/2014/2014.12.01 Note - questions d\'actualité - 1er decembre doc.doc
+    url: '/docs/2014/2014.12.01 Note - questions d'actualité - 1er decembre doc.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1240,7 +1240,7 @@ export const memos: Memo[] = [
     date: '2014-12-03',
     
     title: 'General Elements of Public Opinion Context',
-    /docs/2014/2014.12.03 Contexte opinion.pdf
+    url: '/docs/2014/2014.12.03 Contexte opinion.pdf',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1254,7 +1254,7 @@ export const memos: Memo[] = [
     date: '2014-12-05',
     
     title: 'Barometer of political dynamics TNS-Sofrès / Cevipof',
-    /docs/2014/2014.12.05 Note - Baromètre Cevipof.doc
+    url: '/docs/2014/2014.12.05 Note - Baromètre Cevipof.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1268,7 +1268,7 @@ export const memos: Memo[] = [
     date: '2014-12-07',
     
     title: 'Current Affairs Questions SIG - December 7, 2014',
-    /docs/2014/2014.12.07 Note - questions d\'actualité 7 décembre.doc
+    url: '/docs/2014/2014.12.07 Note - questions d\'actualité 7 décembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1281,8 +1281,8 @@ export const memos: Memo[] = [
     
     date: '2014-12-09',
     
-    title: 'Summary of last week\'s political news',
-    /docs/2014/2014.12.09 Note - mémorisation actu 9 décembre.doc
+    title: 'Summary of last week's political news',
+    url: '/docs/2014/2014.12.09 Note - mémorisation actu 9 décembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1296,7 +1296,7 @@ export const memos: Memo[] = [
     date: '2014-12-10',
     
     title: 'Opinion Tracks on Immigration',
-    /docs/2014/2014.12.10 Note - point opinion immigration.doc
+    url: '/docs/2014/2014.12.10 Note - point opinion immigration.doc',
     categories: ['Social Policy', 'Homeland Security'],
     
     isQuinquennatEvent: false,
@@ -1310,7 +1310,7 @@ export const memos: Memo[] = [
     date: '2014-12-14',
     
     title: 'An opinion viewpoint on Mr. Valls\' speech on equality',
-    /docs/2014/2014.12.14 Note - discours égalité.doc
+    url: '/docs/2014/2014.12.14 Note - discours égalité.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1324,7 +1324,7 @@ export const memos: Memo[] = [
     date: '2014-12-15',
     
     title: 'Current Affairs Questions SIG - December 15, 2014',
-    /docs/2014/2014.12.15 Note - questions d\'actualité 15 décembre.doc
+    url: '/docs/2014/2014.12.15 Note - questions d'actualité 15 décembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1338,7 +1338,7 @@ export const memos: Memo[] = [
     date: '2014-12-18',
     
     title: 'Opinion assessment (1): memorization of political news from the last quarter',
-    /docs/2014/2014.12.18 Note - bilan 2014 - 1 - memo actu.doc
+    url: '/docs/2014/2014.12.18 Note - bilan 2014 - 1 - memo actu.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1352,7 +1352,7 @@ export const memos: Memo[] = [
     date: '2014-12-19',
     
     title: 'Continuous memorization of current events / September - December',
-    /docs/2014/2014.12.19 Note - bilan 2014 - 1 - memo actu - graphs.doc
+    url: '/docs/2014/2014.12.19 Note - bilan 2014 - 1 - memo actu - graphs.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1366,7 +1366,7 @@ export const memos: Memo[] = [
     date: '2014-12-19',
     
     title: 'Public Opinion Assessment (1): Memorization of Political News from the Last Quarter',
-    /docs/2014/2014.12.19 Note - bilan 2014 - 1 - memo actu.pdf
+    url: '/docs/2014/2014.12.19 Note - bilan 2014 - 1 - memo actu.pdf',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1380,7 +1380,7 @@ export const memos: Memo[] = [
     date: '2014-12-19',
     
     title: 'Opinion assessment (1): memorization of political news from the last quarter',
-    /docs/2014/2014.12.19 Note - bilan 2014 - memo actu.pdf
+    url: '/docs/2014/2014.12.19 Note - bilan 2014 - memo actu.pdf',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1394,7 +1394,7 @@ export const memos: Memo[] = [
     date: '2014-12-21',
     
     title: 'Annual assessment of some personalities - CSA',
-    /docs/2014/2014.12.21 Note - bilan personnalités CSA.doc
+    url: '/docs/2014/2014.12.21 Note - bilan personnalités CSA.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1408,7 +1408,7 @@ export const memos: Memo[] = [
     date: '2014-12-21',
     
     title: 'Current Affairs Questions SIG - December 21, 2014',
-    /docs/2014/2014.12.21 Note - questions d\'actualité 21 décembre.doc
+    url: '/docs/2014/2014.12.21 Note - questions d\'actualité 21 décembre.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1422,7 +1422,7 @@ export const memos: Memo[] = [
     date: '2014-12-22',
     
     title: 'Subject: Opinion assessment (2): Political life and political scene',
-    /docs/2014/2014.12.22 Note - bilan 2014 - 2 - vie et scène politique.doc
+    url: '/docs/2014/2014.12.22 Note - bilan 2014 - 2 - vie et scène politique.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1436,7 +1436,7 @@ export const memos: Memo[] = [
     date: '2014-12-24',
     
     title: 'Opinion assessment (3): some evolutions of the left in surveys',
-    /docs/2014/2014.12.24 Note - bilan 2014 - 3 - évolutions gauche.doc
+    url: '/docs/2014/2014.12.24 Note - bilan 2014 - 3 - évolutions gauche.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1450,7 +1450,7 @@ export const memos: Memo[] = [
     date: '2014-12-31',
     
     title: 'Some proposals for a space based on renewal',
-    /docs/2014/2014.12.31 Note - propositions renouvellement vcr.doc
+    url: '/docs/2014/2014.12.31 Note - propositions renouvellement vcr.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
@@ -1464,7 +1464,7 @@ export const memos: Memo[] = [
     date: '2014-12-31',
     
     title: 'Some proposals for a space based on renewal',
-    /docs/2014/2014.12.31 Note - propositions renouvellement.doc
+    url: '/docs/2014/2014.12.31 Note - propositions renouvellement.doc',
     categories: ['Social Policy'],
     
     isQuinquennatEvent: false,
