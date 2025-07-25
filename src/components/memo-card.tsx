@@ -45,7 +45,7 @@ export function MemoCard({ memo, index, dictionary, lang }: MemoCardProps) {
                 <Calendar className="h-4 w-4 mr-2" />
                 <time dateTime={memo.date}>{format(new Date(memo.date), 'd MMMM yyyy', { locale: dateLocale })}</time>
               </div>
-              <CardTitle className="font-headline text-2xl text-primary">
+              <CardTitle className="font-headline text-2xl text-foreground">
                 <Link href={`/${lang}/memo/${memo.id}`} className="hover:underline">
                     {memo.title}
                 </Link>

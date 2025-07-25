@@ -77,7 +77,7 @@ export default async function MemoPage({ params }: MemoPageProps) {
                             <Calendar className="h-4 w-4 mr-2" />
                             <time dateTime={memo.date}>{format(new Date(memo.date), 'd MMMM yyyy', { locale: dateLocale })}</time>
                         </div>
-                        <CardTitle className="font-headline text-3xl text-primary">{memo.title}</CardTitle>
+                        <CardTitle className="font-headline text-3xl text-foreground">{memo.title}</CardTitle>
                         </div>
                         {memo.isQuinquennatEvent && (
                         <div className="p-2 bg-accent/10 rounded-full flex-shrink-0" title={dictionary.memoPage.majorEventTitle}>

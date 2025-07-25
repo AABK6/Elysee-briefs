@@ -15,7 +15,7 @@ body {
   /* Default to dark theme */
   :root {
     --background: 233 64% 10%; /* Deep Navy */
-    --foreground: 220 10% 85%; /* Softer Light Gray for text */
+    --foreground: 220 15% 95%; /* Lighter Gray for text */
     --card: 233 60% 15%;
     --card-foreground: 220 10% 90%;
     --popover: 233 60% 12%;
