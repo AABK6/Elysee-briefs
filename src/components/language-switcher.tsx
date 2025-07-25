@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 const FR_FLAG = '🇫🇷'
-const EN_FLAG = '🇬🇧'
+const EN_FLAG = '🇺🇸'
 
 export function LanguageSwitcher() {
   const pathName = usePathname()
