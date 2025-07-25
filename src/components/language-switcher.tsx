@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { i18n, type Locale } from '@/i18n-config'
 import { Button } from '@/components/ui/button'
-import { Globe } from 'lucide-react'
 
 import {
   DropdownMenu,
@@ -14,7 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 const FR_FLAG = '🇫🇷'
-const EN_FLAG = '🇺🇸'
+const EN_FLAG = '🇬🇧'
 
 export function LanguageSwitcher() {
   const pathName = usePathname()
