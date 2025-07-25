@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { getDictionary } from '@/lib/get-dictionary';
 import { i18n, type Locale } from '@/i18n-config';
@@ -25,7 +26,7 @@ export default function RootLayout({
   params: { lang: Locale };
 }>) {
   return (
-    <html lang={params.lang} className="dark">
+    <html lang={params.lang}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

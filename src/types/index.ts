@@ -1,3 +1,4 @@
+
 export type MemoCategory =
   | 'Politique Économique'
   | 'Affaires Étrangères'
