@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+
 import type { DateRange } from 'react-day-picker';
 import { AppHeader } from '@/components/app-header';
 import { SearchFilters } from '@/components/search-filters';
@@ -21,36 +21,34 @@ export default function Home({ searchParams }: PageProps) {
       ? { from: parseISO(searchParams.from), to: searchParams.to ? parseISO(searchParams.to) : undefined }
       : undefined;
 
-  const filteredMemos = useMemo(() => {
-    return allMemos
-      .filter((memo) => {
-        const lowerCaseSearch = searchTerm.toLowerCase();
-        const matchesSearchTerm =
-          memo.title.toLowerCase().includes(lowerCaseSearch) ||
-          memo.summary.toLowerCase().includes(lowerCaseSearch) ||
-          memo.categories.some((cat) => cat.toLowerCase().includes(lowerCaseSearch));
+  const filteredMemos = allMemos
+    .filter((memo) => {
+      const lowerCaseSearch = searchTerm.toLowerCase();
+      const matchesSearchTerm =
+        memo.title.toLowerCase().includes(lowerCaseSearch) ||
+        memo.summary.toLowerCase().includes(lowerCaseSearch) ||
+        memo.categories.some((cat) => cat.toLowerCase().includes(lowerCaseSearch));
 
-        if (!matchesSearchTerm) return false;
+      if (!matchesSearchTerm) return false;
 
-        if (dateRange?.from) {
-          const memoDate = new Date(memo.date);
-          const fromDate = new Date(dateRange.from);
-          fromDate.setHours(0, 0, 0, 0);
+      if (dateRange?.from) {
+        const memoDate = new Date(memo.date);
+        const fromDate = new Date(dateRange.from);
+        fromDate.setHours(0, 0, 0, 0);
 
-          if (dateRange.to) {
-            const toDate = new Date(dateRange.to);
-            toDate.setHours(23, 59, 59, 999);
-            return memoDate >= fromDate && memoDate <= toDate;
-          }
-          const fromDateEnd = new Date(dateRange.from);
-          fromDateEnd.setHours(23, 59, 59, 999);
-          return memoDate >= fromDate && memoDate <= fromDateEnd;
+        if (dateRange.to) {
+          const toDate = new Date(dateRange.to);
+          toDate.setHours(23, 59, 59, 999);
+          return memoDate >= fromDate && memoDate <= toDate;
         }
+        const fromDateEnd = new Date(dateRange.from);
+        fromDateEnd.setHours(23, 59, 59, 999);
+        return memoDate >= fromDate && memoDate <= fromDateEnd;
+      }
 
-        return true;
-      })
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  }, [searchTerm, dateRange]);
+      return true;
+    })
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
     <div className="bg-background min-h-screen font-body text-foreground">
