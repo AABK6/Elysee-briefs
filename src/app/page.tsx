@@ -1,21 +1,25 @@
-'use client';
-
-import { useState, useMemo, useEffect } from 'react';
+import { useMemo } from 'react';
 import type { DateRange } from 'react-day-picker';
 import { AppHeader } from '@/components/app-header';
 import { SearchFilters } from '@/components/search-filters';
 import { MemoCard } from '@/components/memo-card';
 import { memos as allMemos } from '@/lib/memos';
-import { Skeleton } from '@/components/ui/skeleton';
+import { parseISO } from 'date-fns';
 
-export default function Home() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [dateRange, setDateRange] = useState<DateRange | undefined>(undefined);
-  const [isClient, setIsClient] = useState(false);
+type PageProps = {
+  searchParams: {
+    q?: string;
+    from?: string;
+    to?: string;
+  };
+};
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+export default function Home({ searchParams }: PageProps) {
+  const searchTerm = searchParams.q || '';
+  const dateRange: DateRange | undefined =
+    searchParams.from 
+      ? { from: parseISO(searchParams.from), to: searchParams.to ? parseISO(searchParams.to) : undefined }
+      : undefined;
 
   const filteredMemos = useMemo(() => {
     return allMemos
@@ -47,17 +51,6 @@ export default function Home() {
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, [searchTerm, dateRange]);
-  
-  const PageSkeleton = () => (
-    <div className="space-y-8">
-      {[...Array(3)].map((_, i) => (
-        <div key={i} className="pl-12 relative">
-          <Skeleton className="absolute left-4 -ml-[9px] top-5 h-5 w-5 rounded-full" />
-          <Skeleton className="h-64 w-full rounded-lg" />
-        </div>
-      ))}
-    </div>
-  );
 
   return (
     <div className="bg-background min-h-screen font-body text-foreground">
@@ -65,16 +58,13 @@ export default function Home() {
         <AppHeader />
         <SearchFilters
           searchTerm={searchTerm}
-          onSearchTermChange={setSearchTerm}
           dateRange={dateRange}
-          onDateRangeChange={setDateRange}
         />
         <div className="mt-12">
           <div className="relative">
             <div className="absolute left-4 -ml-px h-full w-0.5 bg-primary/20" aria-hidden="true" />
             <div className="space-y-12">
-              {!isClient ? <PageSkeleton /> :
-              filteredMemos.length > 0 ? (
+              {filteredMemos.length > 0 ? (
                 filteredMemos.map((memo, index) => (
                   <MemoCard key={memo.id} memo={memo} index={index} />
                 ))

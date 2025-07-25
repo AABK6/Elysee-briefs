@@ -1,5 +1,6 @@
 import { format } from 'date-fns';
-import { Calendar, FileText, Star } from 'lucide-react';
+import { Calendar, FileText, Star, Eye } from 'lucide-react';
+import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -34,7 +35,11 @@ export function MemoCard({ memo, index }: MemoCardProps) {
                 <Calendar className="h-4 w-4 mr-2" />
                 <time dateTime={memo.date}>{format(new Date(memo.date), 'MMMM d, yyyy')}</time>
               </div>
-              <CardTitle className="font-headline text-2xl text-primary">{memo.title}</CardTitle>
+              <CardTitle className="font-headline text-2xl text-primary">
+                <Link href={`/memo/${memo.id}`} className="hover:underline">
+                    {memo.title}
+                </Link>
+              </CardTitle>
             </div>
             {memo.isQuinquennatEvent && (
               <div className="p-2 bg-accent/10 rounded-full flex-shrink-0">
@@ -53,7 +58,13 @@ export function MemoCard({ memo, index }: MemoCardProps) {
         <CardContent>
           <p className="text-foreground/80 text-base leading-relaxed">{memo.summary}</p>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="gap-2">
+          <Button asChild variant="secondary">
+            <Link href={`/memo/${memo.id}`}>
+              <Eye className="mr-2 h-4 w-4" />
+              View Details
+            </Link>
+          </Button>
           <Button asChild>
             <a href={memo.documentUrl} target="_blank" rel="noopener noreferrer">
               <FileText className="mr-2 h-4 w-4" />
