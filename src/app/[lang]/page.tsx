@@ -1,3 +1,4 @@
+
 import type { DateRange } from 'react-day-picker';
 import { AppHeader } from '@/components/app-header';
 import { SearchFilters } from '@/components/search-filters';
@@ -16,9 +17,9 @@ type PageProps = {
   };
 };
 
-export default async function Home({ params, searchParams }: PageProps) {
-  const dictionary = await getDictionary(params.lang);
-  const allMemos = await getMemos(params.lang);
+export default async function Home({ params: { lang }, searchParams }: PageProps) {
+  const dictionary = await getDictionary(lang);
+  const allMemos = await getMemos(lang);
 
   const searchTerm = searchParams.q || '';
   const dateRange: DateRange | undefined =
@@ -63,7 +64,7 @@ export default async function Home({ params, searchParams }: PageProps) {
           dictionary={dictionary.searchFilters}
           searchTerm={searchTerm}
           dateRange={dateRange}
-          lang={params.lang}
+          lang={lang}
         />
         <div className="mt-12">
           <div className="relative">
@@ -71,7 +72,7 @@ export default async function Home({ params, searchParams }: PageProps) {
             <div className="space-y-12">
               {filteredMemos.length > 0 ? (
                 filteredMemos.map((memo, index) => (
-                  <MemoCard key={memo.id} memo={memo} index={index} dictionary={dictionary.memoCard} lang={params.lang} />
+                  <MemoCard key={memo.id} memo={memo} index={index} dictionary={dictionary.memoCard} lang={lang} />
                 ))
               ) : (
                 <div className="text-center py-16 bg-card rounded-lg shadow-sm ml-12">
