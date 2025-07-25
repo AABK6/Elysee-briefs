@@ -10,7 +10,7 @@ import { Locale } from '@/i18n-config';
 
 type PageProps = {
   params: { lang: Locale };
-  searchParams: {
+  searchParams?: {
     q?: string;
     from?: string;
     to?: string;
@@ -66,6 +66,7 @@ export default async function Home({ params, searchParams }: PageProps) {
           searchTerm={searchTerm}
           dateRange={dateRange}
           lang={lang}
+          memos={allMemos}
         />
         <div className="mt-12">
           <div className="relative">

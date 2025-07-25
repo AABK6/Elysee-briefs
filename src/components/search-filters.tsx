@@ -1,10 +1,11 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import type { DateRange } from 'react-day-picker';
 import { Calendar as CalendarIcon, Search, X } from 'lucide-react';
-import { format, formatISO } from 'date-fns';
+import { format, formatISO, parseISO } from 'date-fns';
 import { fr, enUS } from 'date-fns/locale';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -13,6 +14,7 @@ import { Input } from '@/components/ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Card } from '@/components/ui/card';
 import { Locale } from '@/i18n-config';
+import type { Memo } from '@/types';
 
 interface SearchFiltersProps {
   searchTerm: string;
@@ -24,6 +26,7 @@ interface SearchFiltersProps {
     submitSearch: string;
   },
   lang: Locale;
+  memos: Memo[];
 }
 
 export function SearchFilters({
@@ -31,11 +34,16 @@ export function SearchFilters({
   dateRange: initialDateRange,
   dictionary,
   lang,
+  memos,
 }: SearchFiltersProps) {
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
   const [dateRange, setDateRange] = useState<DateRange | undefined>(initialDateRange);
   const router = useRouter();
   const dateLocale = lang === 'fr' ? fr : enUS;
+
+  const memoDates = memos.map((memo) => parseISO(memo.date));
+  const fromDate = new Date('2013-06-01');
+  const toDate = new Date('2017-05-31');
 
   useEffect(() => {
     setSearchTerm(initialSearchTerm);
@@ -51,15 +59,11 @@ export function SearchFilters({
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(window.location.search);
     if (searchTerm) {
       params.set('q', searchTerm);
-    }
-    if (dateRange?.from) {
-      params.set('from', formatISO(dateRange.from, { representation: 'date' }));
-      if (dateRange.to) {
-        params.set('to', formatISO(dateRange.to, { representation: 'date' }));
-      }
+    } else {
+      params.delete('q');
     }
     pushState(params);
   };
@@ -72,15 +76,17 @@ export function SearchFilters({
 
   const handleDateChange = (newDateRange: DateRange | undefined) => {
     setDateRange(newDateRange);
-    const params = new URLSearchParams();
-    if (searchTerm) {
-        params.set('q', searchTerm);
-    }
+    const params = new URLSearchParams(window.location.search);
     if (newDateRange?.from) {
         params.set('from', formatISO(newDateRange.from, { representation: 'date' }));
         if (newDateRange.to) {
             params.set('to', formatISO(newDateRange.to, { representation: 'date' }));
+        } else {
+            params.delete('to');
         }
+    } else {
+        params.delete('from');
+        params.delete('to');
     }
     pushState(params);
   }
@@ -136,6 +142,19 @@ export function SearchFilters({
                   onSelect={handleDateChange}
                   numberOfMonths={2}
                   locale={dateLocale}
+                  fromDate={fromDate}
+                  toDate={toDate}
+                  modifiers={{
+                    hasMemo: memoDates,
+                  }}
+                  modifiersStyles={{
+                    hasMemo: { 
+                      fontWeight: 'bold',
+                      textDecoration: 'underline',
+                      color: 'hsl(var(--accent-foreground))',
+                      backgroundColor: 'hsl(var(--accent) / 0.5)',
+                    },
+                  }}
                 />
               </PopoverContent>
             </Popover>
