@@ -15,17 +15,17 @@ body {
   /* Default to dark theme */
   :root {
     --background: 233 64% 10%; /* Deep Navy */
-    --foreground: 240 5% 90%; /* Light text for contrast */
+    --foreground: 220 10% 85%; /* Softer Light Gray for text */
     --card: 233 60% 15%;
-    --card-foreground: 240 5% 90%;
+    --card-foreground: 220 10% 90%;
     --popover: 233 60% 12%;
-    --popover-foreground: 240 5% 90%;
+    --popover-foreground: 220 10% 90%;
     --primary: 233 70% 80%; /* Lighter navy for primary elements */
     --primary-foreground: 233 64% 15%;
     --secondary: 233 50% 25%;
     --secondary-foreground: 0 0% 98%;
     --muted: 233 50% 25%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted-foreground: 220 10% 65%;
     --accent: 56 40% 60%; /* #BDB76B Muted Gold - slightly brightened for dark bg */
     --accent-foreground: 240 5% 98%;
     --destructive: 0 62.8% 30.6%;
@@ -67,4 +67,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
