@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import type { DateRange } from 'react-day-picker';
 import { Calendar as CalendarIcon, Search, X } from 'lucide-react';
 import { format, formatISO } from 'date-fns';
+import { fr } from 'date-fns/locale';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';
@@ -77,13 +78,13 @@ export function SearchFilters({
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
               type="search"
-              placeholder="Search by keyword or category..."
+              placeholder="Rechercher par mot-clé ou catégorie..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="pl-10 text-base h-12"
-              aria-label="Search memos"
+              aria-label="Rechercher dans les notes"
             />
-             <button type="submit" className="hidden">Submit</button>
+             <button type="submit" className="hidden">Soumettre</button>
           </div>
           <div className="md:col-span-2 flex items-center gap-2">
             <Popover>
@@ -100,14 +101,14 @@ export function SearchFilters({
                   {dateRange?.from ? (
                     dateRange.to ? (
                       <>
-                        {format(dateRange.from, 'LLL dd, y')} -{' '}
-                        {format(dateRange.to, 'LLL dd, y')}
+                        {format(dateRange.from, 'd LLL y', { locale: fr })} -{' '}
+                        {format(dateRange.to, 'd LLL y', { locale: fr })}
                       </>
                     ) : (
-                      format(dateRange.from, 'LLL dd, y')
+                      format(dateRange.from, 'd LLL y', { locale: fr })
                     )
                   ) : (
-                    <span>Filter by date</span>
+                    <span>Filtrer par date</span>
                   )}
                 </Button>
               </PopoverTrigger>
@@ -119,11 +120,12 @@ export function SearchFilters({
                   selected={dateRange}
                   onSelect={handleDateChange}
                   numberOfMonths={2}
+                  locale={fr}
                 />
               </PopoverContent>
             </Popover>
             {(initialSearchTerm || initialDateRange) && (
-              <Button variant="ghost" size="icon" onClick={clearFilters} aria-label="Clear filters">
+              <Button variant="ghost" size="icon" onClick={clearFilters} aria-label="Effacer les filtres">
                 <X className="h-4 w-4" />
               </Button>
             )}

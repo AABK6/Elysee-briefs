@@ -1,11 +1,11 @@
 export type MemoCategory =
-  | 'Economic Policy'
-  | 'Foreign Affairs'
-  | 'Social Policy'
-  | 'Defense'
-  | 'Internal Security'
-  | 'Environment'
-  | 'Technology';
+  | 'Politique Économique'
+  | 'Affaires Étrangères'
+  | 'Politique Sociale'
+  | 'Défense'
+  | 'Sécurité Intérieure'
+  | 'Environnement'
+  | 'Technologie';
 
 export interface Memo {
   id: string;

@@ -1,4 +1,5 @@
 import { format } from 'date-fns';
+import { fr } from 'date-fns/locale';
 import { Calendar, FileText, Star, Eye } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -33,7 +34,7 @@ export function MemoCard({ memo, index }: MemoCardProps) {
             <div>
               <div className="flex items-center text-sm text-muted-foreground mb-2">
                 <Calendar className="h-4 w-4 mr-2" />
-                <time dateTime={memo.date}>{format(new Date(memo.date), 'MMMM d, yyyy')}</time>
+                <time dateTime={memo.date}>{format(new Date(memo.date), 'd MMMM yyyy', { locale: fr })}</time>
               </div>
               <CardTitle className="font-headline text-2xl text-primary">
                 <Link href={`/memo/${memo.id}`} className="hover:underline">
@@ -62,13 +63,13 @@ export function MemoCard({ memo, index }: MemoCardProps) {
           <Button asChild variant="secondary">
             <Link href={`/memo/${memo.id}`}>
               <Eye className="mr-2 h-4 w-4" />
-              View Details
+              Voir les détails
             </Link>
           </Button>
           <Button asChild>
             <a href={memo.documentUrl} target="_blank" rel="noopener noreferrer">
               <FileText className="mr-2 h-4 w-4" />
-              View Source Document
+              Voir le document source
             </a>
           </Button>
         </CardFooter>

@@ -70,8 +70,8 @@ export default function Home({ searchParams }: PageProps) {
                 ))
               ) : (
                 <div className="text-center py-16 bg-card rounded-lg shadow-sm ml-12">
-                  <p className="text-lg font-semibold text-foreground">No memos found.</p>
-                  <p className="text-muted-foreground">Try adjusting your search terms.</p>
+                  <p className="text-lg font-semibold text-foreground">Aucune note trouvée.</p>
+                  <p className="text-muted-foreground">Essayez d'ajuster vos termes de recherche.</p>
                 </div>
               )}
             </div>
