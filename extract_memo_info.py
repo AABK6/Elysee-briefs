@@ -307,7 +307,8 @@ def main() -> None:
         with open(args.output, 'w', encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
     else:
-        print(json.dumps(results, ensure_ascii=False, indent=2))
+        with open('memo_data.json', 'w', encoding='utf-8') as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
