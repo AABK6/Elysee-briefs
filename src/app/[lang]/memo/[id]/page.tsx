@@ -52,7 +52,7 @@ export default async function MemoPage({ params }: MemoPageProps) {
   return (
     <div className="bg-background min-h-screen font-body text-foreground">
       <main className="container mx-auto px-4 py-8 max-w-4xl">
-        <AppHeader dictionary={dictionary.appHeader} />
+        <AppHeader dictionary={dictionary.appHeader} lang={params.lang} />
         
         <div className="mb-8">
             <Button asChild variant="outline">

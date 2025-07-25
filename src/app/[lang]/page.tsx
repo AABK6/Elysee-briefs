@@ -7,24 +7,24 @@ import { getMemos } from '@/lib/get-memos';
 import { parseISO } from 'date-fns';
 import { getDictionary } from '@/lib/get-dictionary'
 import { Locale } from '@/i18n-config';
+import type { Memo } from '@/types';
 
 type PageProps = {
   params: { lang: Locale };
-  searchParams: {
+  searchParams?: {
     q?: string;
     from?: string;
     to?: string;
   };
 };
 
-export default async function Home({ params, searchParams }: PageProps) {
-  const { lang } = params;
+export default async function Home({ params: { lang }, searchParams }: PageProps) {
   const dictionary = await getDictionary(lang);
   const allMemos = await getMemos(lang);
 
-  const searchTerm = searchParams.q || '';
+  const searchTerm = searchParams?.q || '';
   const dateRange: DateRange | undefined =
-    searchParams.from 
+    searchParams?.from 
       ? { from: parseISO(searchParams.from), to: searchParams.to ? parseISO(searchParams.to) : undefined }
       : undefined;
 
@@ -60,12 +60,13 @@ export default async function Home({ params, searchParams }: PageProps) {
   return (
     <div className="bg-background min-h-screen font-body text-foreground">
       <main className="container mx-auto px-4 py-8 max-w-4xl">
-        <AppHeader dictionary={dictionary.appHeader} />
+        <AppHeader dictionary={dictionary.appHeader} lang={lang} />
         <SearchFilters
           dictionary={dictionary.searchFilters}
           searchTerm={searchTerm}
           dateRange={dateRange}
           lang={lang}
+          memos={allMemos}
         />
         <div className="mt-12">
           <div className="relative">

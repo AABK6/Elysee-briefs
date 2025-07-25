@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { i18n, type Locale } from '@/i18n-config'
 import { Button } from '@/components/ui/button'
-import { Globe } from 'lucide-react'
 
 import {
   DropdownMenu,
