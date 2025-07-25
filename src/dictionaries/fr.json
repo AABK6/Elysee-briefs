@@ -1,0 +1,41 @@
+
+{
+    "metadata": {
+      "title": "Dossiers de l'Élysée",
+      "description": "Une revue classifiée des moments clés du quinquennat."
+    },
+    "appHeader": {
+        "title": "Dossiers de l'Élysée",
+        "subtitle": "Une revue classifiée des moments clés du quinquennat."
+    },
+    "home": {
+        "noMemosFound": "Aucune note trouvée.",
+        "adjustSearch": "Essayez d'ajuster vos termes de recherche."
+    },
+    "memoCard": {
+        "viewDetails": "Voir les détails",
+        "viewSource": "Voir le document source",
+        "majorEventTitle": "Événement marquant du quinquennat"
+    },
+    "memoPage": {
+        "notFound": "Note non trouvée",
+        "backToTimeline": "Retour à la chronologie",
+        "majorEventTitle": "Événement marquant du quinquennat",
+        "viewSource": "Voir le document source original"
+    },
+    "searchFilters": {
+        "searchPlaceholder": "Rechercher par mot-clé ou catégorie...",
+        "filterByDate": "Filtrer par date",
+        "clearFilters": "Effacer les filtres",
+        "submitSearch": "Soumettre"
+    },
+    "categories": {
+      "economic-policy": "Politique Économique",
+      "foreign-affairs": "Affaires Étrangères",
+      "social-policy": "Politique Sociale",
+      "defense": "Défense",
+      "homeland-security": "Sécurité Intérieure",
+      "environment": "Environnement",
+      "technology": "Technologie"
+    }
+}

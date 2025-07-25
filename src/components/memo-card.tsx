@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { fr } from 'date-fns/locale';
+import { fr, enUS } from 'date-fns/locale';
 import { Calendar, FileText, Star, Eye } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,13 +7,22 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import type { Memo } from '@/types';
 import { cn } from '@/lib/utils';
+import { Locale } from '@/i18n-config';
 
 interface MemoCardProps {
   memo: Memo;
   index: number;
+  dictionary: {
+    viewDetails: string;
+    viewSource: string;
+    majorEventTitle: string;
+  };
+  lang: Locale;
 }
 
-export function MemoCard({ memo, index }: MemoCardProps) {
+export function MemoCard({ memo, index, dictionary, lang }: MemoCardProps) {
+  const dateLocale = lang === 'fr' ? fr : enUS;
+
   return (
     <div className="pl-12 relative animate-in fade-in-0 duration-500" style={{ animationDelay: `${index * 100}ms`}}>
       <div
@@ -34,16 +43,16 @@ export function MemoCard({ memo, index }: MemoCardProps) {
             <div>
               <div className="flex items-center text-sm text-muted-foreground mb-2">
                 <Calendar className="h-4 w-4 mr-2" />
-                <time dateTime={memo.date}>{format(new Date(memo.date), 'd MMMM yyyy', { locale: fr })}</time>
+                <time dateTime={memo.date}>{format(new Date(memo.date), 'd MMMM yyyy', { locale: dateLocale })}</time>
               </div>
               <CardTitle className="font-headline text-2xl text-primary">
-                <Link href={`/memo/${memo.id}`} className="hover:underline">
+                <Link href={`/${lang}/memo/${memo.id}`} className="hover:underline">
                     {memo.title}
                 </Link>
               </CardTitle>
             </div>
             {memo.isQuinquennatEvent && (
-              <div className="p-2 bg-accent/10 rounded-full flex-shrink-0">
+              <div className="p-2 bg-accent/10 rounded-full flex-shrink-0" title={dictionary.majorEventTitle}>
                 <Star className="h-5 w-5 text-accent" fill="currentColor" />
               </div>
             )}
@@ -61,15 +70,15 @@ export function MemoCard({ memo, index }: MemoCardProps) {
         </CardContent>
         <CardFooter className="gap-2">
           <Button asChild variant="secondary">
-            <Link href={`/memo/${memo.id}`}>
+            <Link href={`/${lang}/memo/${memo.id}`}>
               <Eye className="mr-2 h-4 w-4" />
-              Voir les détails
+              {dictionary.viewDetails}
             </Link>
           </Button>
           <Button asChild>
             <a href={memo.documentUrl} target="_blank" rel="noopener noreferrer">
               <FileText className="mr-2 h-4 w-4" />
-              Voir le document source
+              {dictionary.viewSource}
             </a>
           </Button>
         </CardFooter>

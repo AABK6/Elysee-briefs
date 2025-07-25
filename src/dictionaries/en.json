@@ -1,0 +1,42 @@
+
+{
+    "metadata": {
+      "title": "Élysée Briefs",
+      "description": "A classified review of the key moments of the presidential term."
+    },
+    "appHeader": {
+        "title": "Élysée Briefs",
+        "subtitle": "A classified review of the key moments of the presidential term."
+    },
+    "home": {
+      "noMemosFound": "No briefs found.",
+      "adjustSearch": "Try adjusting your search terms."
+    },
+    "memoCard": {
+      "viewDetails": "View Details",
+      "viewSource": "View Source Document",
+      "majorEventTitle": "Key event of the term"
+    },
+    "memoPage": {
+      "notFound": "Brief not found",
+      "backToTimeline": "Back to Timeline",
+      "majorEventTitle": "Key event of the term",
+      "viewSource": "View Original Source Document"
+    },
+    "searchFilters": {
+      "searchPlaceholder": "Search by keyword or category...",
+      "filterByDate": "Filter by date",
+      "clearFilters": "Clear filters",
+      "submitSearch": "Submit"
+    },
+    "categories": {
+      "economic-policy": "Economic Policy",
+      "foreign-affairs": "Foreign Affairs",
+      "social-policy": "Social Policy",
+      "defense": "Defense",
+      "homeland-security": "Homeland Security",
+      "environment": "Environment",
+      "technology": "Technology"
+    }
+  }
+  

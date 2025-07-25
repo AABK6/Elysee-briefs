@@ -1,28 +1,5 @@
-import type {Metadata} from 'next';
-import './globals.css';
-import { Toaster } from "@/components/ui/toaster"
-
-export const metadata: Metadata = {
-  title: 'Dossiers de l\'Élysée',
-  description: 'Une revue classifiée des moments clés du quinquennat.',
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="fr" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400;1,7..72,700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
-        {children}
-        <Toaster />
-      </body>
-    </html>
-  );
+// This file is intentionally left blank. 
+// The root layout is now at /src/app/[lang]/layout.tsx
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return children;
 }

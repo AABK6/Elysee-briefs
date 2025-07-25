@@ -5,7 +5,12 @@ export type MemoCategory =
   | 'Défense'
   | 'Sécurité Intérieure'
   | 'Environnement'
-  | 'Technologie';
+  | 'Technologie'
+  | 'Economic Policy'
+  | 'Foreign Affairs'
+  | 'Social Policy'
+  | 'Homeland Security';
+
 
 export interface Memo {
   id: string;
@@ -15,4 +20,5 @@ export interface Memo {
   categories: MemoCategory[];
   documentUrl: string;
   isQuinquennatEvent: boolean;
+  fullContent: string;
 }
