@@ -4593,5 +4593,3 @@ export const memos: Memo[] = [
     fullContent: '<p>Detailed content of this memo will be available here.</p>'
   }
 ]
-
-    
