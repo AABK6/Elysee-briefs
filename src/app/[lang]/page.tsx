@@ -11,10 +11,8 @@ import type { Memo } from '@/types';
 
 type PageProps = {
   params: { lang: Locale };
-  searchParams?: {
-    q?: string;
-    from?: string;
-    to?: string;
+  searchParams: {
+    [key: string]: string | string[] | undefined;
   };
 };
 
@@ -22,10 +20,13 @@ export default async function Home({ params: { lang }, searchParams }: PageProps
   const dictionary = await getDictionary(lang);
   const allMemos = await getMemos(lang);
 
-  const searchTerm = searchParams?.q || '';
+  const searchTerm = typeof searchParams.q === 'string' ? searchParams.q : '';
+  const from = typeof searchParams.from === 'string' ? searchParams.from : undefined;
+  const to = typeof searchParams.to === 'string' ? searchParams.to : undefined;
+
   const dateRange: DateRange | undefined =
-    searchParams?.from 
-      ? { from: parseISO(searchParams.from), to: searchParams.to ? parseISO(searchParams.to) : undefined }
+    from 
+      ? { from: parseISO(from), to: to ? parseISO(to) : undefined }
       : undefined;
 
   const filteredMemos = allMemos
